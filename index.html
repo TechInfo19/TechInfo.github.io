@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Ramadan Kareem</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" >
+    </head>
+	<body class="is-preload">
+<!-- form -->
+	<div class="stars" id="formule">
+		<div class="container">
+		  <h1>ما اسمك ؟ </h1> 
+		  <div class="content">
+			  <img id="moon" class="fadeIn" src="images/moon.png">
+			  <form class="night" id="myForm" >
+				<input type="text" placeholder="اللقب" id="Nom">
+				<input type="text" placeholder="الاسم" id="Prenom">
+				<input class="button" type="button" value="ارسال" id="send">
+			  </form>
+			  <img id="lantern" src="images/lantern.png">
+			  <img id="lantern-on" src="images/lantern-light.png">
+		  </div>
+		</div>
+	</div>
+<!--end form-->
+<!-- Ramadan kareem-->	
+
+		<article class="stars" id="greeting">
+				<div class="container">
+					    
+						<div class="">
+							<span class="image fit"><img style="width=100%" src="images/pic1.png" alt="" /></span>
+							
+						</div>
+		  <h1 id="msg">رمضان احلى مع 
+				<strong id="NameHere"></strong></h1>
+			 
+				
+		</div>
+	</div>
+<!--end -->
+	
+		<!-- copyrights -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					
+					<footer>
+						<div class="text-center" id="copyright">
+							Made with <i class="icon fa-heart"/> by Manale <i class="icon fa-copyright"/> 2019 
+						</div>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/bootstrap.min.js"></script>
+				<script type="text/javascript">
+							function getName(){
+								
+							
+							}
+				
+				
+						
+                 </script>
+				 <script type="text/javascript">
+				 $(document).ready(function () {
+								$('#formule').show();
+								$('#greeting').hide();
+								
+						$('#send').click(function () {
+								$('#formule').hide();
+								$('#greeting').show();
+						
+								var nom = document.getElementById('Nom').value;
+								var prenom = document.getElementById('Prenom').value; 
+					
+								document.getElementById("NameHere").innerHTML =nom+" "+prenom+"♥";
+	
+								
+						   
+							});
+					})
+            
+			</script>
+	
+			
+
+	</body>
+</html>
